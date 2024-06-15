@@ -16,7 +16,7 @@ const CustomCursor = () => {
   })
 
   useEffect(() => {
-    
+
     window.addEventListener("mousemove", handleMove)
     window.addEventListener("click", handleClick)
     window.addEventListener("scroll", handleScroll)
@@ -36,9 +36,9 @@ const CustomCursor = () => {
       x: event.clientX - 16,
       y: event.clientY - 16,
       hovered: false
-    };
+    }
 
-    let hoveredElement : Element | undefined | null = document.elementFromPoint(
+    let hoveredElement: Element | undefined | null = document.elementFromPoint(
       event.clientX,
       event.clientY
     )
@@ -47,12 +47,12 @@ const CustomCursor = () => {
 
     if (dataCursorAttribute) {
       if (dataCursorAttribute !== "true") {
-        hoveredElement = hoveredElement?.closest(`[data-cursor="true"]`);
+        hoveredElement = hoveredElement?.closest(`[data-cursor="true"]`)
       }
-      if (!hoveredElement) return;
+      if (!hoveredElement) return
 
-      const computedStyle = window.getComputedStyle(hoveredElement);
-      const elementBorder = hoveredElement.getBoundingClientRect();
+      const computedStyle = window.getComputedStyle(hoveredElement)
+      const elementBorder = hoveredElement.getBoundingClientRect()
 
       updatedCursor = {
         x: elementBorder.x,
@@ -68,16 +68,55 @@ const CustomCursor = () => {
       ...updatedCursor,
       dotVisible: true,
       scrolling: false
-    });
-  };
+    })
+  }
 
 
-  const handleClick = () => {
-
+  const handleClick = (event: MouseEvent) => {
+    let hoveredElement: Element | null | undefined = document.elementFromPoint(
+      event.clientX,
+      event.clientY
+    )
+    let dataFocusableCursor = hoveredElement?.getAttribute(
+      "data-cursor-focusable"
+    )
+    if (dataFocusableCursor && hoveredElement) {
+      const computedStyle = window.getComputedStyle(hoveredElement)
+      const elementBorder = hoveredElement.getBoundingClientRect()
+      let radius = computedStyle.borderRadius || "100%"
+      if (radius === "0px") {
+        radius = "4px"
+      }
+      setCursor({
+        x: elementBorder.x,
+        y: elementBorder.y,
+        width: elementBorder.width + "px",
+        height: elementBorder.height + "px",
+        radius,
+        hovered: false,
+        dotVisible: false,
+        scrolling: false,
+      })
+    } else {
+      resetCursor()
+    }
   }
 
   const handleScroll = () => {
+    if (cursor.hovered) return;
+    resetCursor()
+  }
 
+  const resetCursor = () => {
+    setCursor((prev) => {
+      return {
+        ...prev,
+        width: "32px",
+        height: "32px",
+        radius: "100%",
+        hovered: false,
+      }
+    })
   }
 
   return (
@@ -86,7 +125,7 @@ const CustomCursor = () => {
         className={`custom-cursor border-2 border-black hidden lg:flex 
         ${cursor.hovered || cursor.scrolling
             ? "border-opacity-100 cursor-hover-animation duration-300"
-            : "border-opacity-40 duration-150"
+            : "border-opacity-100 duration-150"
           }
         `}
         style={{
@@ -100,7 +139,7 @@ const CustomCursor = () => {
         <div
           className="fixed w-1 h-1 rounded-full bg-black z-[999] pointer-events-none  hidden md:flex "
           style={{
-            transform: `translate3d(${cursor.x + 14}px, ${cursor.y + 14}px, 0)`,
+            transform: `translate3d(${cursor.x + 14}px, ${cursor.y - 98}px, 0)`,
           }}
         />
       )}
