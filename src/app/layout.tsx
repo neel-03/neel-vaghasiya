@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { content } from "./fonts/fonts";
+import { content } from './../app/components/custom/fonts/fonts'
 import CustomCursor from "./components/custom/CustomCursor";
 
 export const metadata: Metadata = {

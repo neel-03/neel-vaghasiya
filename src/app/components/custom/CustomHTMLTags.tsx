@@ -1,4 +1,4 @@
-import { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode, SVGProps } from "react"
+import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react"
 
 export const CustomButton = (props: ButtonHTMLAttributes<HTMLButtonElement>) => {
     return (

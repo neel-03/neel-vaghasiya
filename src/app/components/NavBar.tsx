@@ -4,6 +4,7 @@ import { CustomButton } from './custom/CustomHTMLTags'
 import Image from 'next/image'
 import { IoMenu, IoClose } from "react-icons/io5"
 import Link from 'next/link'
+import Logo from './../favicon.ico'
 
 const NavBar = () => {
 
@@ -22,12 +23,12 @@ const NavBar = () => {
     }
     
     return (
-        <div className='shadow-sm fixed w-full top-0 left-0'>
+        <div className='shadow-sm border-b-2 fixed w-full top-0 left-0'>
             <div className='md:flex items-center justify-between bg-white py-6 md:px-10 px-7'>
                 <Link href='/' className='font-bold rounded-full text-2xl flex items-center justify-center gap-2'>
                     <Image
                         data-cursor={true}
-                        src='/favicon.ico'
+                        src={Logo}
                         alt='Logo'
                         height={45} width={45}
                         className='rounded-full' />
