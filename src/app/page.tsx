@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="mt-24"> { /*pt-4 mt-28*/}
+      <main id='home' className="pt-24">
         <HomeSection />
       </main>
     </>

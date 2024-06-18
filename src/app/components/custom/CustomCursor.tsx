@@ -139,7 +139,7 @@ const CustomCursor = () => {
         <div
           className="fixed w-1 h-1 rounded-full bg-black z-[999] pointer-events-none  hidden md:flex "
           style={{
-            transform: `translate3d(${cursor.x + 14}px, ${cursor.y - 82}px, 0)`,
+            transform: `translate3d(${cursor.x + 14}px, ${cursor.y + 14}px, 0)`,
           }}
         />
       )}
