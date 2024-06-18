@@ -39,11 +39,11 @@ const NavBar = () => {
                 </div>
 
                 <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'home')} className='md:ml-8 md:my-0 my-7'>Home</CustomButton>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'about')} className='md:ml-8 md:my-0 my-7'>About</CustomButton>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'projects')} className='md:ml-8 md:my-0 my-7'>Projects</CustomButton>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'contact')} className='md:ml-8 md:my-0 my-7'>Contact</CustomButton>
-                    <CustomButton onClick={() => openResume()} className='md:ml-16 md:my-0 my-7'>Resume</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'home')} className='md:ml-8 md:my-0 my-7 font-black'>Home</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'about')} className='md:ml-8 md:my-0 my-7 font-black'>About</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'projects')} className='md:ml-8 md:my-0 my-7 font-black'>Projects</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'contact')} className='md:ml-8 md:my-0 my-7 font-black'>Contact</CustomButton>
+                    <CustomButton onClick={() => openResume()} className='md:ml-16 md:my-0 my-7 font-black'>Resume</CustomButton>
                 </ul>
             </div>
         </div>

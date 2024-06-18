@@ -2,6 +2,7 @@ import Image from "next/image"
 import github from '../../public/github-logo.png'
 import linkedin from '../../public/linkedin-logo.png'
 import mail from '../../public/email-logo.png'
+import x from '../../public/x-logo.png'
 import { Tooltip } from "@nextui-org/tooltip";
 
 const ContactIcons = () => {
@@ -25,6 +26,16 @@ const ContactIcons = () => {
                     alt="github-logo"
                     height={50} width={50}
                     onClick={() => { window.open('https://www.github.com/neel-03') }}
+                />
+            </Tooltip>
+            <Tooltip content={'X'} className="bg-black text-white text-xs px-1 pt-1 rounded-md">
+                <Image
+                    data-cursor={true}
+                    className="border-2 border-opacity-20 transition-colors rounded-full shadow-md"
+                    src={x}
+                    alt="x-logo"
+                    height={50} width={50}
+                    onClick={() => { window.open('https://x.com/NeelV8803') }}
                 />
             </Tooltip>
             <Tooltip content={'Mail'} className="bg-black text-white text-xs px-1 pt-1 rounded-md">
