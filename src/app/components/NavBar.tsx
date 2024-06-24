@@ -16,6 +16,7 @@ const NavBar = () => {
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' })
         }
+        setOpen(false)
     }
 
     const openResume = () => {
@@ -39,28 +40,15 @@ const NavBar = () => {
                 </div>
 
                 <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'home')} className='md:ml-8 md:my-0 my-7 font-black'>Home</CustomButton>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'about')} className='md:ml-8 md:my-0 my-7 font-black'>About</CustomButton>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'projects')} className='md:ml-8 md:my-0 my-7 font-black'>Projects</CustomButton>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'contact')} className='md:ml-8 md:my-0 my-7 font-black'>Contact</CustomButton>
-                    <CustomButton onClick={() => openResume()} className='md:ml-16 md:my-0 my-7 font-black'>Resume</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'home')} className='md:ml-8 md:my-0 my-7'>Home</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'education')} className='md:ml-8 md:my-0 my-7'>Education</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'skills')} className='md:ml-8 md:my-0 my-7'>Skills</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'projects')} className='md:ml-8 md:my-0 my-7'>Projects</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'contact')} className='md:ml-8 md:my-0 my-7'>Contact</CustomButton>
+                    <CustomButton onClick={() => openResume()} className='md:ml-16 md:my-0 my-7'>Resume</CustomButton>
                 </ul>
             </div>
         </div>
-
-
-        // <div className='bg-[#6a6a6a94] relative m-3 rounded-[2px] flex flex-row px-4 py-6 max-[455px]:justify-center'>
-        //     <div className='text-xl font-mono text-white w-[35%] max-[743px]:hidden'>
-        //         <Image src='/../favicon.ico' alt='Neel Vaghasiya Logo' width={50} height={50}/>
-        //     </div>
-        //     <div className='flex flex-row gap-10 max-[743px]:gap-5 max-[455px]:gap-2'>
-        //         <CustomButton className='text-white text-sm  max-[634px]:text-xs'>Home</CustomButton>
-        //     <CustomButton onClick={handleClickScroll.bind(this, 'about')} className='text-[#BDBDBD] text-sm max-[634px]:text-xs'>About</CustomButton>
-        //         <CustomButton onClick={handleClickScroll.bind(this, 'skills')} className='text-[#BDBDBD]  text-sm max-[634px]:text-xs'>Expertise</CustomButton>
-        //         <CustomButton onClick={handleClickScroll.bind(this, 'projects')} className='text-[#BDBDBD]  text-sm max-[634px]:text-xs '>Projects</CustomButton>
-        //         <CustomButton onClick={handleClickScroll.bind(this, 'contacts')} className='text-[#BDBDBD]   text-sm max-[634px]:text-xs'>Contacts</CustomButton>
-        //     </div>
-        // </div>
     )
 }
 
