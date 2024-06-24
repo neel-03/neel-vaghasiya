@@ -7,7 +7,7 @@ import { Tooltip } from "@nextui-org/tooltip";
 
 const HomeSection = () => {
   return (
-    <div className="py-6 md:py-16 px-[7%] max-[1300px]:px-[4%] shadow-sm border-b-2">
+    <div className="pt-6 md:pt-16 px-[7%] max-[1300px]:px-[4%]">
       <div className="flex flex-col gap-3 md:flex-row md:justify-around items-center">
         <div className="flex flex-col">
           <h1 className={`max-[1140px]:text-6xl max-[1140px]:leading-normal max-[1300px]:leading-snug max-[992px]:text-5xl max-[992px]:leading-normal max-[800px]:text-4xl max-[800px]:leading-relaxed max-[634px]:leading-tight max-[455px]:text-3xl text-6xl leading-tight ${heading.className}`}>
@@ -36,6 +36,7 @@ const HomeSection = () => {
         <div>Reach out to me:</div>
         <ContactIcons />
       </div>
+      <div id='education' className="h-[80px] md:h-[60px]"></div>
     </div>
   )
 }

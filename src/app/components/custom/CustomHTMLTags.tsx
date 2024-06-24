@@ -5,7 +5,7 @@ export const CustomButton = (props: ButtonHTMLAttributes<HTMLButtonElement>) => 
         <button
             data-cursor={true}
             {...props}
-            className={`font-light whitespace-nowrap flex justify-center items-center px-3 pt-2 pb-1 border-2 rounded-md border-opacity-20 transition-colors shadow-sm ${props.disabled ?
+            className={`font-semibold whitespace-nowrap flex justify-center items-center px-3 pt-2 pb-1 border-2 rounded-md border-opacity-20 transition-colors shadow-sm ${props.disabled ?
                 "opacity-50" : "hover:border-black hover:border-opacity-30 "
                 } ${props.className ? props.className : ""}`}
         />
