@@ -12,7 +12,6 @@ const NavBar = () => {
 
     const handleClickScroll = (value: string) => {
         const element = document.getElementById(value)
-        // console.log(element)
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' })
         }
@@ -20,7 +19,7 @@ const NavBar = () => {
     }
 
     const openResume = () => {
-        
+        window.open('/resume')
     }
     
     return (
@@ -42,10 +41,10 @@ const NavBar = () => {
                 <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
                     <CustomButton onClick={handleClickScroll.bind(this, 'home')} className='md:ml-8 md:my-0 my-7'>Home</CustomButton>
                     <CustomButton onClick={handleClickScroll.bind(this, 'education')} className='md:ml-8 md:my-0 my-7'>Education</CustomButton>
-                    <CustomButton onClick={handleClickScroll.bind(this, 'skills')} className='md:ml-8 md:my-0 my-7'>Skills</CustomButton>
+                    <CustomButton onClick={handleClickScroll.bind(this, 'tools')} className='md:ml-8 md:my-0 my-7'>Tools & Technologies</CustomButton>
                     <CustomButton onClick={handleClickScroll.bind(this, 'projects')} className='md:ml-8 md:my-0 my-7'>Projects</CustomButton>
                     <CustomButton onClick={handleClickScroll.bind(this, 'contact')} className='md:ml-8 md:my-0 my-7'>Contact</CustomButton>
-                    <CustomButton onClick={() => openResume()} className='md:ml-16 md:my-0 my-7'>Resume</CustomButton>
+                    <CustomButton onClick={() => openResume()} className='md:ml-16 md:my-0 my-7'>View Resume</CustomButton>
                 </ul>
             </div>
         </div>
