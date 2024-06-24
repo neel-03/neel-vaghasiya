@@ -122,7 +122,7 @@ const CustomCursor = () => {
   return (
     <div>
       <div
-        className={`custom-cursor border-2 border-black hidden lg:flex 
+        className={`custom-cursor border-2 border-black hidden md:flex 
         ${cursor.hovered || cursor.scrolling
             ? "border-opacity-100 cursor-hover-animation duration-300"
             : "border-opacity-100 duration-150"

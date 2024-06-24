@@ -1,8 +1,8 @@
 import Image from "next/image"
-import github from '../../public/github-logo.png'
-import linkedin from '../../public/linkedin-logo.png'
-import mail from '../../public/email-logo.png'
-import x from '../../public/x-logo.png'
+import github from '../../../public/github-logo.png'
+import linkedin from '../../../public/linkedin-logo.png'
+import mail from '../../../public/email-logo.png'
+import x from '../../../public/x-logo.png'
 import { Tooltip } from "@nextui-org/tooltip";
 
 const ContactIcons = () => {

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import photo from './../../public/photo.png'
+import photo from '../../../public/photo.png'
 import { heading } from "../components/custom/fonts/fonts"
 import { CustomAnchor } from "../components/custom/CustomHTMLTags"
 import ContactIcons from "../components/ContactIcons"
