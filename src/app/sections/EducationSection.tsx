@@ -8,7 +8,7 @@ const EducationSection = () => {
             <div className="mt-7 w-full flex justify-center">
                 <EducationTimeline />
             </div>
-            <div id='skills' className="h-[80px] md:h-[60px]"></div>
+            <div id='tools' className="h-[80px] md:h-[60px]"></div>
         </div>
     )
 }

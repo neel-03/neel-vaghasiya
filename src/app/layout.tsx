@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { content } from './../app/components/custom/fonts/fonts'
-import CustomCursor from "./components/custom/CustomCursor";
 
 export const metadata: Metadata = {
   title: "Neel Vaghasiya | Portfolio",
@@ -16,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={content.className}>
-        <CustomCursor/>
         {children}
       </body>
     </html>
