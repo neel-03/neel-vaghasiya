@@ -1,6 +1,6 @@
 import Image from "next/image"
 import photo from '../../../public/photo.png'
-import { heading } from "../components/custom/fonts/fonts"
+import { heading } from "../components/custom/fonts"
 import { CustomAnchor } from "../components/custom/CustomHTMLTags"
 import ContactIcons from "../components/ContactIcons"
 import { Tooltip } from "@nextui-org/tooltip";
@@ -21,7 +21,7 @@ const HomeSection = () => {
           </span>
         </div>
         <div className="border-2 rounded-lg border-opacity-20 transition-colors shadow-lg">
-          <Tooltip content={'Yes, It\'s me..!'} className="bg-black text-white text-xs px-1 pt-1 rounded-md">
+          <Tooltip content={'Yes, It\'s me..!'} placement='bottom' className="bg-black text-white text-xs px-1 pt-1 rounded-md">
             <Image
               data-cursor={true}
               src={photo}

@@ -23,7 +23,7 @@ const NavBar = () => {
     }
     
     return (
-        <div className='shadow-sm border-b-2 fixed w-full top-0 left-0'>
+        <div className='shadow-sm border-b-2 fixed w-full top-0 left-0 z-[2]'>
             <div className='flex items-center justify-between bg-white py-6 md:px-10 px-7'>
                 <Link href='/' className='font-bold rounded-full text-2xl flex items-center justify-center gap-2'>
                     <Image

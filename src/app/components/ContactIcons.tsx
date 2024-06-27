@@ -9,7 +9,7 @@ import { Tooltip } from "@nextui-org/tooltip";
 const ContactIcons = () => {
     return (
         <div className="flex gap-5">
-            <Tooltip content={'LinkedIn'} className="bg-black text-white text-xs px-1 pt-1 rounded-md">
+            <Tooltip content={'LinkedIn'} placement='bottom' className="bg-black text-white text-xs px-1 pt-1 rounded-md">
                 <Image
                     data-cursor={true}
                     className="border-2 border-opacity-20 transition-colors rounded-full shadow-md"
@@ -19,7 +19,7 @@ const ContactIcons = () => {
                     onClick={() => { window.open('https://www.linkedin.com/in/vneel/') }}
                 />
             </Tooltip>
-            <Tooltip content={'GitHub'} className="bg-black text-white text-xs px-1 pt-1 rounded-md">
+            <Tooltip content={'GitHub'} placement='bottom' className="bg-black text-white text-xs px-1 pt-1 rounded-md">
                 <Image
                     data-cursor={true}
                     className="border-2 border-opacity-20 transition-colors rounded-full shadow-md"
@@ -29,7 +29,7 @@ const ContactIcons = () => {
                     onClick={() => { window.open('https://www.github.com/neel-03') }}
                 />
             </Tooltip>
-            <Tooltip content={'X'} className="bg-black text-white text-xs px-1 pt-1 rounded-md">
+            <Tooltip content={'X'} placement='bottom' className="bg-black text-white text-xs px-1 pt-1 rounded-md">
                 <Image
                     data-cursor={true}
                     className="border-2 border-opacity-20 transition-colors rounded-full shadow-md"
@@ -39,7 +39,7 @@ const ContactIcons = () => {
                     onClick={() => { window.open('https://x.com/NeelV8803') }}
                 />
             </Tooltip>
-            <Tooltip content={'Mail'} className="bg-black text-white text-xs px-1 pt-1 rounded-md">
+            <Tooltip content={'Mail'} placement='bottom' className="bg-black text-white text-xs px-1 pt-1 rounded-md">
                 <Image
                     data-cursor={true}
                     className="border-2 border-opacity-20 transition-colors rounded-full shadow-md"

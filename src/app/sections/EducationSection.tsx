@@ -1,5 +1,5 @@
 import EducationTimeline from '../components/EducationTimeline'
-import { heading } from './../components/custom/fonts/fonts'
+import { heading } from '../components/custom/fonts'
 
 const EducationSection = () => {
     return (

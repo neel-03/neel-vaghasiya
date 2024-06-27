@@ -2,64 +2,179 @@
 @tailwind components;
 @tailwind utilities;
 
+/* custom text-border */
 @layer base {
-    .font-outline {
-            -webkit-text-stroke: 1px black;
-    }
+  .font-outline {
+    -webkit-text-stroke: 1px black;
+  }
 
-    .font-outline-1 {
-        -webkit-text-stroke: 1.5px black;
-    }
+  .font-outline-1 {
+    -webkit-text-stroke: 1.5px black;
+  }
 
-    .font-outline-2 {
-        -webkit-text-stroke: 2px black;
-    }
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
 }
 
-*, button {
-    cursor: none;
+/* custom cursor */
+*,
+button {
+  cursor: none;
 }
 
 .custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    will-change: width, height, transform, border;
-    z-index: 1000;
-    pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  will-change: width, height, transform, border;
+  z-index: 1000;
+  pointer-events: none;
 }
 
 .cursor-hover-animation {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .cursor-hover-animation::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-100%);
-    background-image: linear-gradient(90deg,
-            rgba(0, 0, 0, 0) 0,
-            #00000013 10%,
-            #00000065 70%,
-            rgba(255, 255, 255, 0));
-    -webkit-animation: shimmer 1500ms infinite;
-    animation: shimmer 1500ms infinite;
-    content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0,
+    #00000013 10%,
+    #00000065 70%,
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-animation: shimmer 1500ms infinite;
+  animation: shimmer 1500ms infinite;
+  content: "";
 }
 
 @-webkit-keyframes shimmer {
-    100% {
-        transform: translateX(100%);
-    }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 @keyframes shimmer {
-    100% {
-        transform: translateX(100%);
-    }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* tech slider */
+@keyframes scroll-left {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: translate3d(0%, 0, 0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 750px) {
+  .fade-in-left {
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+    animation: fade-in-left 0.3s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0ms;
+  }
+
+  .fade-in-left.offset-1 {
+    animation-delay: 200ms;
+  }
+
+  .fade-in-left.offset-2 {
+    animation-delay: 400ms;
+  }
+}
+
+.tech {
+  overflow: hidden;
+}
+
+.tech .inner {
+  height: 100%;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+
+@media screen and (min-width: 750px) {
+  .tech .logos {
+    margin: 1rem auto;
+  }
+
+  .tech .logos .logos-inner {
+    display: block;
+    width: 200%;
+    animation: scroll-left 40s linear infinite;
+    animation-fill-mode: forwards;
+  }
+
+  .tech .logos .logos-inner:hover {
+    animation-play-state: paused;
+  }
+
+  .tech .logos .logos-inner .slider-item {
+    position: relative;
+    width: 4rem;
+    display: inline-block;
+    margin: 0 1rem;
+    transition: all 0.2s ease-out;
+  }
+
+  .tech .logos .logos-inner .slider-item h4 {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    height: 0;
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 100%;
+    transition: opacity 0.3s;
+  }
+
+  .tech .logos .logos-inner .slider-item:hover {
+    transform: scale(1.4);
+  }
+
+  .tech .logos .logos-inner .slider-item:hover h4 {
+    opacity: 1;
+    height: fit-content;
+  }
+
+  .tech .logos .logos-inner ul {
+    float: left;
+    width: 50%;
+  }
 }

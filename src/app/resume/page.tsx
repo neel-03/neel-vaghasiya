@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { heading } from "../components/custom/fonts/fonts";
+import { heading } from "../components/custom/fonts";
 import CustomCursor from "../components/custom/CustomCursor"
 import { CustomAnchor } from "../components/custom/CustomHTMLTags";
 import { BackBtn } from "../components/BackBtn";

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { content } from './../app/components/custom/fonts/fonts'
+import { content } from './components/custom/fonts'
 
 export const metadata: Metadata = {
   title: "Neel Vaghasiya | Portfolio",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={content.className}>
+      <body className={`${content.className} bg-white dark:bg-white`}>
         {children}
       </body>
     </html>

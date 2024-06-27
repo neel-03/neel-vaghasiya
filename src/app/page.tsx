@@ -1,6 +1,7 @@
 'use client'
 import NavBar from "./components/NavBar";
 import CustomCursor from "./components/custom/CustomCursor";
+import CustomLoader from "./components/custom/CustomLoader";
 import ContactSection from "./sections/ContactSection";
 import EducationSection from "./sections/EducationSection";
 import HomeSection from "./sections/HomeSection";

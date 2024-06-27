@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation"
 import CustomCursor from "./components/custom/CustomCursor"
 import { CustomButton } from "./components/custom/CustomHTMLTags"
-import { heading } from "./components/custom/fonts/fonts"
+import { heading } from "./components/custom/fonts"
 
 
 const NotFound = () => {

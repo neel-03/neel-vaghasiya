@@ -1,4 +1,4 @@
-import { heading } from '../components/custom/fonts/fonts'
+import { heading } from '../components/custom/fonts'
 
 const ProjectsSection = () => {
   return (

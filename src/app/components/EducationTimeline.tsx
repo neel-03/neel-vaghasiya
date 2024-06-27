@@ -1,10 +1,10 @@
 import React from 'react'
-import { heading } from './custom/fonts/fonts'
+import { heading } from './custom/fonts'
 import { CustomAnchor } from './custom/CustomHTMLTags'
 
 const Educationspanline = () => {
     return (
-        <ul className="px-4 lg:px-8 w-full">
+        <ul className="w-full">
             <li>
                 <article>
                     <div className="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 border-2 shadow-md">
