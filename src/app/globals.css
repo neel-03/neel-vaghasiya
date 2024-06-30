@@ -73,7 +73,7 @@ button {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   will-change: width, height, transform, border;
-  z-index: 3;
+  z-index: 300000;
   pointer-events: none;
 }
 
