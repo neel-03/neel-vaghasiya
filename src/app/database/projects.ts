@@ -67,7 +67,7 @@ export const projects: Project[] = [
             {
                 techId: '3',
                 techName: 'Azure Functions',
-                techIcon: 'https://simpleicons.org/icons/azurefunctions.svg'
+                techIcon: 'https://www.svgrepo.com/show/305771/azurefunctions.svg'
             },
         ],
         liveLink: "https://document-converter.vercel.app/",

@@ -131,7 +131,7 @@ export const logos = {
         {
             id: "25",
             name: "VS Code",
-            icon: { url: "https://simpleicons.org/icons/visualstudiocode.svg" },
+            icon: { url: "https://www.svgrepo.com/show/342347/visual-studio-code.svg" },
         },
         {
             id: "26",

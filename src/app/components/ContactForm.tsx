@@ -60,10 +60,8 @@ const ContactForm = () => {
                 mailObject,
                 process.env.NEXT_PUBLIC_USER_ID
             ).then((res) => {
-                console.log(res)
                 resolve('Mail sent')
             }, (err) => {
-                console.log(err)
                 reject('Mail not sent')
             })
         });
