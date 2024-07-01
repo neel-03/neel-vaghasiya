@@ -20,7 +20,7 @@ export const projects: Project[] = [
         id: "1",
         heading: "QuizBee",
         description: "An AI-based Quiz Generation WebApp",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Magni nulla quo nemo illo fugit.Eius dolore aspernatur perspiciatis nisi ex voluptate ratione aperiam enim praesentium.",
+        content: "Developed in collaboration with a team member, QuizBee uses ChatGPT to generate dynamic quizzes on various topics. It includes features like quiz attempts and sharing functionality.",
         imgURL: "https://agxxxwckmuptjtzvrpzw.supabase.co/storage/v1/object/public/resume/quizbee.png",
         tech: [
             {
@@ -50,8 +50,8 @@ export const projects: Project[] = [
     {
         id: "2",
         heading: "Document Converter",
-        description: "Lorem",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Magni nulla quo nemo illo fugit.Eius dolore aspernatur perspiciatis nisi ex voluptate ratione aperiam enim praesentium.",
+        description: "Format conversion tool",
+        content: "Developed a tool that converts files from one format to another, such as JSON to CSV and vice versa. Users can preview or download the converted file.",
         imgURL: "https://agxxxwckmuptjtzvrpzw.supabase.co/storage/v1/object/public/resume/document-converter.png",
         tech: [
             {
@@ -76,8 +76,8 @@ export const projects: Project[] = [
     {
         id: "3",
         heading: "Project Tracker",
-        description: "Lorem",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Magni nulla quo nemo illo fugit.Eius dolore aspernatur perspiciatis nisi ex voluptate ratione aperiam enim praesentium.",
+        description: "Full-stack project management system",
+        content: "Personal project that includes roles for mentor and admin. Both roles can manage projects, while admins also manage mentor.",
         imgURL: "https://agxxxwckmuptjtzvrpzw.supabase.co/storage/v1/object/public/resume/project-tracker.png",
         tech: [
             {
@@ -122,8 +122,8 @@ export const projects: Project[] = [
     {
         id: "4",
         heading: "Personal Portfolio",
-        description: "Lorem",
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Magni nulla quo nemo illo fugit.Eius dolore aspernatur perspiciatis nisi ex voluptate ratione aperiam enim praesentium.",
+        description: "Showcase of my work and skills",
+        content: "Built a responsive personal portfolio website that represents my skills and showcases various projects.",
         imgURL: "https://agxxxwckmuptjtzvrpzw.supabase.co/storage/v1/object/public/resume/portfolio.png",
         tech: [
             {
@@ -143,6 +143,6 @@ export const projects: Project[] = [
             },
         ],
         liveLink: undefined,
-        githubLink: undefined
+        githubLink: 'https://github.com/neel-03/neel-vaghasiya'
     }
 ]
