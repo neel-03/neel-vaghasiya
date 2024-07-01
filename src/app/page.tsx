@@ -2,6 +2,7 @@
 import NavBar from "./components/NavBar";
 import CustomCursor from "./components/custom/CustomCursor";
 import CustomLoader from "./components/custom/CustomLoader";
+import Footer from "./components/footer";
 import ContactSection from "./sections/ContactSection";
 import EducationSection from "./sections/EducationSection";
 import HomeSection from "./sections/HomeSection";
@@ -20,6 +21,7 @@ export default function Home() {
         <ProjectsSection />
         <ContactSection />
       </main>
+      <Footer />
     </>
   );
 }
