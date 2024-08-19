@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const page = () => {
     return (
-        <object data="https://agxxxwckmuptjtzvrpzw.supabase.co/storage/v1/object/public/resume/Neel_Vaghasiya_Resume.pdf" type="application/pdf" className="w-full h-screen">
+        <object data="https://agxxxwckmuptjtzvrpzw.supabase.co/storage/v1/object/public/resume/Neel_Vaghasiya_resume.pdf" type="application/pdf" className="w-full h-screen">
             <CustomCursor />
             <div className="w-full px-16 md:px-0 h-screen flex items-center justify-center">
                 <div className="bg-white border-2 flex flex-col items-center justify-center px-4 md:px-8 lg:px-24 py-8 rounded-lg shadow-md max-w-[650px]">
