@@ -11,12 +11,12 @@ export const logos = {
         {
             id: "1",
             name: "C",
-            icon: { url: "https://svgshare.com/i/17e8.svg" },
+            icon: { url: "https://simpleicons.org/icons/c.svg" },
         },
         {
             id: "2",
             name: "C++",
-            icon: { url: "https://svgshare.com/i/17ed.svg"},
+            icon: { url: "https://simpleicons.org/icons/cplusplus.svg"},
         },
         {
             id: "3",
